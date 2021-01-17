@@ -1,6 +1,6 @@
 # yDNS Updater
 
-[![Build Status](https://travis-ci.org/wyattjoh/ydns-updater.svg?branch=master)](https://travis-ci.org/wyattjoh/ydns-updater)
+[![Build Status](https://travis-ci.org/alauzon/ydns-updater.svg?branch=master)](https://travis-ci.org/alauzon/ydns-updater)
 
 A lightweight appplication which updates a dns entry on [https://ydns.eu/](https://ydns.eu/) using a systemd unit provided in `systemd/ydns-updater.service`. This will take the servers current ip address and update the associated DNS entry. Perfect for connecting to your home network if it has a dynamic ip address.
 
@@ -10,10 +10,10 @@ A lightweight appplication which updates a dns entry on [https://ydns.eu/](https
 
 ```bash
 # Get the code
-go get github.com/wyattjoh/ydns-updater
+go get github.com/alauzon/ydns-updater
 
 # Install the systemd files
-cp $GOPATH/src/github.com/wyattjoh/ydns-updater/systemd/ydns-updater.service /etc/systemd/system
+cp $GOPATH/src/github.com/alauzon/ydns-updater/systemd/ydns-updater.service /etc/systemd/system
 
 # Edit the systemd file
 #
@@ -32,12 +32,12 @@ systemctl enable ydns-updater.service
 ### Installation Via Homebrew
 
 ```
-brew install wyattjoh/stable/ydns-updater
+brew install alauzon/stable/ydns-updater
 ```
 
 ### Precompiled
 
-1. Download pre-compiled binary on the [Releases Page](https://github.com/wyattjoh/ydns-updater/releases/latest) for your Arch/OS
+1. Download pre-compiled binary on the [Releases Page](https://github.com/alauzon/ydns-updater/releases/latest) for your Arch/OS
 2. Download systemd unit file and install into `/etc/systemd/system`
 3. Start service `systemctl start ydns-updater.service`
 4. Enable service `systemctl enable ydns-updater.service`
